@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+.carousel-container {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.carousel-slide {
+  display: flex;
+  gap: 10px;
+  animation: scroll 25s linear infinite;
+  width: max-content;
+}
+
+.carousel-slide img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.75rem;
+  }
+
+  .carousel-slide img {
+    width: 220px;
+  }
+
+  .carousel-slide {
+    animation-duration: 40s;
+  }
+
+  .text-warning ul {
+    font-size: 1rem;
+  }
+}
+.hdllimage{
+    width: 400px;
+    height: 140%;
+    clip-path: circle(29%);
+
+  }
